@@ -7,8 +7,8 @@
     </listeners>
     <test name="Regression">
         <classes>
-            <class name="ApiTest"/>
-<!--            <class name="UITest"/>-->
+<!--            <class name="ApiTest"/>-->
+            <class name="UITest"/>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->

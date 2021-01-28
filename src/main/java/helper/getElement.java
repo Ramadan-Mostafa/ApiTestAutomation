@@ -8,6 +8,13 @@ import pages.BasePage;
 import java.util.Map;
 
 public class getElement {
+    /***
+     * This method is desired to convert the value of findBy as string coming from the external sheet and retuen an object of
+     * By to be used by the user to get the web element with
+     * @param findBy
+     * @param identifierValue
+     * @return
+     */
     public static By getFindBy(String findBy, String identifierValue) {
         try {
             switch (findBy) {
@@ -30,6 +37,12 @@ public class getElement {
         return By.cssSelector("");
     }
 
+    /***
+     * This method desired to return the web element according to the value of the findBy and its value coming from the
+     * external sheet, this is based on the element name the same like what is written in the sheet
+     * @param elementName
+     * @return
+     */
     public static WebElement getWebElement(String elementName) {
         Map<String, String> selector = ReadExternalData.readObjectRepo(elementName);
         String findByString = null;

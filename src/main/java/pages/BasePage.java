@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class BasePage {
+    // This is the base which is responsible for creating the remote driver, set and get
     protected static RemoteWebDriver driver = null;
 
     public BasePage(RemoteWebDriver driver) {
@@ -23,14 +24,3 @@ public class BasePage {
         }
     }
 }
-
-
-
-//    public static void takeScreenshot() {
-//        try {
-//            File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-//            FileUtils.copyFile(srcFile,new File(Constants.SCREENSHOT_DIR+ Common.getCurrentTime()+".jpg"));
-//        } catch (IndexOutOfBoundsException e) {
-//            System.out.println(e.getMessage());
-//        }
-//    }

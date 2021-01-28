@@ -14,11 +14,8 @@ public class HomePage extends BasePage {
         super(driver);
     }
 
+    // Login
     public void login() {
-
-
-//        String email = ReadExternalData.getTestData("email");
-//        String password = ReadExternalData.getTestData("password");
 
         String email = LoadDataFile.userdata.getProperty("email");
         String password = LoadDataFile.userdata.getProperty("password");
@@ -35,6 +32,7 @@ public class HomePage extends BasePage {
         btnLogin.click();
     }
 
+    // Check that the 100 results are exist
     public boolean verify100ResultsIsExist() {
         driver.get("https://coinmarketcap.com/");
         List<WebElement> TRcount = driver.findElements(By.tagName("tr"));
@@ -46,6 +44,7 @@ public class HomePage extends BasePage {
         }
     }
 
+    // Add 5 cryptocurrencies
     public void add5Cryptocurrency() {
         driver.get("https://coinmarketcap.com/");
 

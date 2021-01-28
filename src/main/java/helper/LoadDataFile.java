@@ -7,6 +7,7 @@ import java.util.Properties;
 
 public class LoadDataFile {
 
+    // Read data from the properties file
     public static Properties userdata = loadProperties(Constants.PROPERTIES_FILE_PATH);
 
     private static Properties loadProperties(String path) {

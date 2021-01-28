@@ -16,6 +16,12 @@ public class ReadExternalData {
     static Map<String, String> map2 = new HashMap<>();
     static Map<String, String> map3 = new HashMap<>();
 
+    /***
+     * This method is desired to read the object's find by and value according to the element name entered by the user
+     * @param elementName the name of the element the user wants to search for to get its findBy and value
+     * @return map3 which contains the findBy and the value of the element which stored before in the keyvalue pair in both map1 for the
+     * keyvalue pair of the element name and its findBy and the map2 which is the pair of the element name and its value
+     */
     public static Map<String, String> readObjectRepo(String elementName) {
 
         try {

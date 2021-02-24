@@ -35,9 +35,9 @@ public class HomePage extends BasePage {
     // Check that the 100 results are exist
     public boolean verify100ResultsIsExist() {
         driver.get("https://coinmarketcap.com/");
-        List<WebElement> TRcount = driver.findElements(By.tagName("tr"));
-        System.out.println(TRcount.size());
-        if (TRcount.size() == 100) {
+        List<WebElement> TRCount = driver.findElements(By.tagName("tr"));
+        System.out.println(TRCount.size());
+        if (TRCount.size() == 100) {
             return true;
         } else {
             return false;

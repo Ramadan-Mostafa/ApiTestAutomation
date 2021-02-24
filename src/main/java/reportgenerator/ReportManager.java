@@ -54,7 +54,7 @@ public class ReportManager {
      */
     public static void setEnvironmentData() {
         htmlReporter.config().setDocumentTitle("Test Suite");
-        htmlReporter.config().setReportName("MBRHE Test Suite");
+        htmlReporter.config().setReportName("API Test Suite");
         htmlReporter.config().setTheme(Theme.STANDARD);
 
         extent.setSystemInfo("Os name: ", System.getProperty("os.name"));

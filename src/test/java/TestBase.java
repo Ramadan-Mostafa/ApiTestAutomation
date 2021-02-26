@@ -1,8 +1,10 @@
 
+import helper.Common;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 import pages.BasePage;
 import reportgenerator.ReportManager;
+import helper.Common.*;
 
 import java.lang.reflect.Method;
 
@@ -17,15 +19,19 @@ public class TestBase {
     @BeforeTest
     @Parameters({"platform"})
     public static void setUp(String platform) {
-        switch (platform) {
-            case "firefox":
-                targets.Firefox.init();
-                break;
-            case "chrome":
-                targets.Chrome.init();
-                break;
-            case "api":
-                break;
+//        switch (platform) {
+//            case "firefox":
+//                targets.Firefox.init();
+//                break;
+//            case "chrome":
+//                targets.Chrome.init();
+//                break;
+//            case "api":
+//                break;
+//        }
+
+        if (platform!="api"||platform!="API"||platform!="Api"){
+            Common.getDesiredTarget(platform);
         }
     }
 

@@ -22,7 +22,7 @@ public class Firefox {
                 System.setProperty(Constants.FIREFOX_DRIVER_PROPERTY, Constants.FIREFOX_DRIVER_PATH_WIN);
                 break;
             case MacOS:
-                System.setProperty(Constants.FIREFOX_DRIVER_PATH_WIN, Constants.FIREFOX_DRIVER_PATH_MAC);
+                System.setProperty(Constants.FIREFOX_DRIVER_PROPERTY, Constants.FIREFOX_DRIVER_PATH_MAC);
                 break;
         }
 

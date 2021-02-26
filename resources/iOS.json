@@ -1,0 +1,13 @@
+{
+  "bundleId": "",
+  "automationName": "XCUITest",
+  "udid": "",
+  "platformName": "iOS",
+  "platformVersion": "",
+  "usePrebuiltWDA": true,
+  "deviceName": "iPhone",
+  "xcodeOrgId": "",
+  "xcodeSigningId": "iPhone Developer",
+  "newCommandTimeout": 1500,
+  "appiumServerUrl": "http://127.0.0.1:4723/wd/hub"
+}

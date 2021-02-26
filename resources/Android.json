@@ -1,0 +1,11 @@
+{
+  "appPackage": "",
+  "appActivity": "",
+  "automationName": "uiAutomator2",
+  "platformName": "Android",
+  "platformVersion": "",
+  "deviceName": "",
+  "newCommandTimeout": 1000,
+  "autoGrantPermissions": true,
+  "appiumServerUrl": "http://127.0.0.1:4723/wd/hub"
+}

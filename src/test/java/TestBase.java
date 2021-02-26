@@ -16,7 +16,7 @@ public class TestBase {
 
     @BeforeTest
     @Parameters({"platform"})
-    public static void setUp(@Optional("chrome") String platform) {
+    public static void setUp(String platform) {
         switch (platform) {
             case "firefox":
                 targets.Firefox.init();
